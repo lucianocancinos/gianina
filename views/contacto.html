@@ -11,94 +11,83 @@
     
 </head>
 <body class="pag">
-    <header> 
-        <nav class="navbar navbar-expand-lg navbar-dark mt-3" >
-          <a class="navbar-brand  text-secondary" href="../index.html"><img src="../img/home.svg" width="30" height="30" class="d-inline-block align-top" alt="logo"> GIANINA</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mr-auto ml-auto">
-              
-              <a class="nav-link text-secondary" href="productos.html">PRODUCTOS</a>
-              <a class="nav-link text-secondary" href="sale.html">SALE</a>
-              <a class="nav-link text-secondary" href="lookbook.html">LOOKBOOK</a>
-              <a class="nav-link active" href="contacto.html">CONTACTO</a>
+  <header> 
+    <nav class="navbar navbar-expand-lg navbar-dark" >
+      <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" height="50" class="d-inline-block align-top" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto ml-auto">
+          <a class="nav-link primordial"  href="productos.html">Productos</a>
+          <a class="nav-link primordial"  href="sale.html">SALE</a>
+          <a class="nav-link primordial" id="primero" href="contacto.html">Contacto</a>
+        </div>
+        <div>
+          <a href="#" class="car-logo" ><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main class="seccion-contacto">
+      <div class="seccion-contacto container mb-5">
+      <div class="row">
+              <div class="dentroContacto col-lg-12 mt-3"><p>¿Quieres recibir más información sobre nosotros o nuevos productos? Contactanos!</p>
+              </div>
+              <div class="col-lg-6 mt-5 mb-4">
+                <form >
+                  <div class="form-group row"> 
+                  <label for="nombre" class="col-2 col-form-label mb-2">Nombre:</label>
+                    <input type="text" class="form-control col-8 nuevo"  placeholder="Luciano" >
+                  </div>
+                  <div class="form-group row"> 
+                    <label for="apellido" class="col-2 col-form-label mb-2" >Apellido:</label>
+                    <input type="text" class="form-control col-8 nuevo" placeholder="Cancinos">
+                  </div>
+                  <div class="form-group row"> 
+                    <label for="email" class="col-2 col-form-label mb-2">E-mail:</label>
+                    <input type="email" class="form-control col-8 nuevo"  placeholder="email.prueba@gmail.com">
+                  </div>
+                  <div class="form-group">
+                      <label>Desea recibir Newsletter?</label>
+                      <input type="checkbox" name="acepta" value="SI" required/>
+                  </div>
+                  <div class="form-group mb-2">
+                    <label for="validationTextarea">Añade un comentario:</label>
+                    <textarea class="form-control nuevo" id="validationTextarea" placeholder="Comentarios" required></textarea>
+                  </div>
+                    <button class="btn btn-primary nuevo" type="submit">Enviar</button>
+                </form>
+              </div>
+            <div class="datos col-lg-6 mt-5 mb-4">
+              <h1 id="titulo"> DATOS DE CONTACTO </h1>
+                      <p class="wpp mt-4 mb-4"><i class="fas fa-phone-square"></i><span class="wpp">+5493548599999</span></p>
+                      <p class="gmail"><i class="fas fa-envelope"></i> <span class="wpp">emailprueba@gmail.com</span></p> 
             </div>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
           </div>
-          
-        </nav>
-      </header>
-    <br>
-    <main class="contacto">
-    <div class="row">
-        <div class="col-lg-4 text-center mt-3">
-        <section class="datos">
-            <h1> DATOS DE CONTACTO </h1>
-            <p> <img src="../img/whatsapp.svg" width="20"> <span class="wpp">+5493548567049</span></p>
-            <p> <img src="../img/inbox.svg" width="20"> <span class="wpp">emailprueba@gmail.com</span></p> 
-        </section>
         </div>
-        <div class="col-lg-8">
-        <section class="form">
-            <h1> ¿Quieres recibir más información sobre nosotros o nuevos productos? Contactanos!</h1>
-            <form class="formDos">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Luciano" />
-                    <br>
-                    <br>
-                    <label for="nombre">Apellido:</label>
-                    <input type="text" id="nombre" placeholder="Cancinos" />
-                </div>
-                <br>
-                <div>
-                    <label for="correo"> E-mail: </label>
-                    <input type="email" id="correo" required placeholder="email.prueba@gmail.com" />
-                </div>
-                <br>
-            
-                <div>
-                    <label>Desea recibir Newsletter?</label>
-                    <input type="checkbox" name="acepta" value="SI" required/>
-                </div>
-                <br>
-                <div>
-                    <textarea placeholder="Comentarios"></textarea>
-                    <br/>
-                    <input type="submit" value="Mandar" />
-                    <input type="reset" value="Borrar"/>
-                </div>
-            </form>
-        </section>
-        </div>
-    </div>
     </main>
-    <br>
+
     <footer class="container-fluid border-top border-dark">
-      
-        <div class="row ">
-          <div class="col-lg-3 ">
-            <p class="tituleTres"> <a href="https://www.google.com.ar/maps" class="maps"> <i class="fas fa-map-marked-alt"></i> </a> Calle sin Numero</p>
-          </div>
-          <div class="col-lg-6 text-center mt-3">
-            <a href="https://www.facebook.com/" class="facebook"> <i class="fab fa-facebook"> <span class="redesNombre"> /gianina </span></i></a> 
-            <a href="https://twitter.com/home" class="twitter"> <i class="fab fa-twitter-square"> <span class="redesNombre"> @gianina.store </span></i></a> 
-            <a href="https://www.instagram.com/" class="instagram"> <i class="fab fa-instagram-square"><span class="redesNombre"> @gianina.store</span></i></a>
-          </div>
-          <div class="col-lg-3 ">
-            <p class="titule"> copyright 2020 valoración de pagina</p>
-          </div>
+      <div class="row">
+        <div class="col-lg-12 text-center mt-3 mb-3">
+          <a href="https://www.facebook.com/" class="facebook"> <i class="fab fa-facebook"> <span class="redesNombre"> /gianina </span></i></a> 
+          <a href="https://twitter.com/home" class="twitter"> <i class="fab fa-twitter-square"> <span class="redesNombre"> @gianina.store </span></i></a> 
+          <a href="https://www.instagram.com/" class="instagram"> <i class="fab fa-instagram-square"><span class="redesNombre"> @gianina.store</span></i></a>
         </div>
-    </footer>
+      </div>
+      <!--Marca de pagina-->
+    <div class="row copy">
+      <div class="col-lg-6 copyright">
+        <p> &copy; 2020 Todos los derechos reservados. |<a href="https://www.linkedin.com/in/luciano99/"> Cancinos Luciano</a></p>
+      </div>
+      <div class="col-lg-6 information">
+        <a href="#">Politicas de prividad</a> | <a href="#">Terminos y condiciones</a>
+      </div>
+    </div>
+  </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
-    </html> 
+</body>
+</html> 

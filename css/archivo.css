@@ -1,13 +1,5 @@
 
-.titulo{
-    color:#491e21; 
-    font-style: oblique; 
-    font-weight: bold; 
-    text-align: left;
-    /*font-family: 'Anton', sans-serif;*/
-    text-align: center;
-    letter-spacing: 5px;
-}
+
 
 .navegacion ul {
     list-style: none;
@@ -119,34 +111,7 @@
 
 }
 
-.cuadroHome {
-        
-        border: 5px solid black;
-        padding: 50px;
-        margin: auto;
-}
 
-.cuadroProductos {
-        width: 200px;
-        border: 5px solid black;
-        padding: 50px;
-        margin: auto;
-      
-}
-
-.cuadroComprar{
-    width: 210px;
-    border: 5px solid black;
-    padding: 50px;
-    margin: auto;
-}
-
-.cuadroContacto{
-    width: 150px;
-    border: 5px solid black;
-    padding: 50px;
-    margin: auto;
-}
         
 
 .encabezado{
@@ -156,10 +121,7 @@
  }
  
 
-.contacto {
-    display: flex;  flex-direction: row; 
-   justify-content: space-around;
-}
+
 
 .redes{
     margin: 20px;
@@ -183,10 +145,6 @@
     margin: 5px;
 }
 
-.maps{
-    color:palevioletred;
-    margin:5px;
-}
 
 .redesNombre{
     color: black;
@@ -198,75 +156,136 @@
     letter-spacing: 2px;
 }
 
-/*
-.lista li a{
-    list-style: none; 
-    text-decoration: none;  
-    font-style: oblique; 
-    color: #00ffb8 ; 
-    font-family: 'Anton', sans-serif ;
-    margin: 20px;
-}
-
-.lista li{
-    display: inline-block;
-
-.navegacion{
-    background-color: #282520 ;
-    text-align: center;
-    border: 1px solid black;
-}
-}*/
-
-.container > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    justify-content: stretch;
-}
-
- .container {
-   display: grid;
-   grid-gap: 10px; 
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   grid-auto-rows: 75px; 
-   grid-auto-flow: dense;  
-} 
-
- .horizontal{
-     grid-column: span 5; 
-}
-
-.vertical{
-     grid-row: span 4; 
-}
-
-.big {
-     grid-column: span 4; 
-     grid-row: span 4; 
-}
-
-.busquedad{
-    margin: 20px;
-    text-align: center;
+/* FOOTER MARCA DE AGUA */
+.copy{
+    background: #101010;
+    color: #c7c7c7;
+    text-align:center;
     
 }
 
-
-.busquedadCuadro {
-    background-color: #cccccccb;
-    border: none;
-    border-bottom: solid 1px black;
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-.usuario{
-    margin: 20px; 
-    color: #f007;
-    font-size: 50px;
+.copy a:hover{
+    color: #c7c7c7;
 }
 
-.wpp{
-    color: black;
-    margin: 5px;
+.information a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+
+
+.information a:hover{
+    color: #c7c7c7;
+}
+
+/* NAVBAR */
+.navbar{
+    /*background:#ffd983!important;*/
+    background:#80beaf;
+}
+
+.navbar .primordial{
+    /*color:goldenrod!important;*/
+    color:#d1dce2;
+    font-family: 'Anton', sans-serif!important;
+    text-transform: uppercase!important;
+    font-size:18px;
+    font-style: oblique;
+    letter-spacing: 1px; 
+}
+.navbar .primordial:hover{
+    /*color:#000!important;*/
+    color:#b3ddd1;
+}
+.dropdown-menu{
+    /* background:#ffd983!important; */
+    background:#80beaf;
+    border:1px solid #ffd983!important;
+    font-size: 20px!important;
+}
+.dropdown-item:hover{
+    /* background: #ffeab9; */
+    background:#80beaf;
+}
+
+#primero{
+    color:#c1e6fa;
+    font-family: 'Anton', sans-serif!important;
+    text-transform: uppercase!important;
+    font-size:18px;
+    font-style: oblique;
+    letter-spacing: 1px; 
+}
+
+.car-logo {
+    font-size:30px;
+    color:rgb(17, 16, 16);
+    width: 50px;
+    height: 50px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-logo:hover{
+    color:rgb(36, 36, 36);
+    text-decoration: none;
+}
+
+/*--------------------CONTACTO INICIAL---------------------------- */
+#titulo{
+    color:#8da47e!important;
+  }
+  
+  h1{
+    color:#8da47e!important;
+  }
+  
+  .seccion-contacto{
+      color:#395442;
+  }  
+  .dentroContacto { 
+      text-align:center;
+      font-style: italic;
+      font-size: 35px;
+    }
     
-}
+    .formulario { 
+    text-align:center;
+    }
+    
+    .datos { 
+    text-align:center;
+    color:#395442;
+  }
+  
+  .datos span{
+    color:#395442;
+  }
+    
+    .wpp{
+      color:black;
+    }
+  
+  .fa-phone-square{
+    color:#395442;
+    font-size: 30px;
+  }
+  .fa-envelope{
+    font-size: 30px;
+  }
+
+  .nuevo{
+    background:  #f2e3b4!important;
+    color: #395442;
+    font-family: sans-serif;
+    text-align:center!important;
+ }    
+    /*--------------------CONTACTO FINAL---------------------------- */
