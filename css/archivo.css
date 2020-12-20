@@ -289,3 +289,79 @@
     text-align:center!important;
  }    
     /*--------------------CONTACTO FINAL---------------------------- */
+   /*----------------------------  SALE ---------------------------- */
+   article header {
+    display: flex;
+  }
+  
+  article strong {
+    margin-right: 0.75rem;
+  }
+  
+  .author {
+    text-decoration: none;
+  }
+  
+  .author div {
+    color: rgba(6, 63, 252, 0.7);
+    font-weight: 700;
+  }
+  
+  .author span {
+    border-bottom: .1rem solid hsl(236, 77%, 50%);
+    color: black;
+  }
+  
+  article > * {
+    position: relative;
+    z-index: 10;
+  }
+  
+  article p {
+    color: black;
+    line-height: 1.4;
+  }
+  
+  article footer ul {
+    display: flex;
+    
+    margin: 0;
+    padding: 0;
+    
+    list-style-type: none;
+  }
+  
+  article footer li {
+    margin-right: 1rem;
+  }
+  
+  article footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .15rem .75rem;
+    
+    border-radius: 5rem;
+    color:olivedrab;
+    text-decoration: none;
+  }
+  
+  article footer a:hover,
+  article footer a:focus {
+    background-color: blanchedalmond;
+    color: black;
+  }
+
+  .nuevo{
+    background:  #f2e3b4!important;
+    color: #395442;
+    font-family: sans-serif;
+    text-align:center!important;
+ }    
+
+ .tituloSale{
+     color:black;
+ }
+
+  /* --------------------SALE-------------------- */
+
