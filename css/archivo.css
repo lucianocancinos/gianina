@@ -1,6 +1,3 @@
-
-
-
 .navegacion ul {
     list-style: none;
     margin: 16px;
@@ -362,6 +359,74 @@
  .tituloSale{
      color:black;
  }
-
   /* --------------------SALE-------------------- */
 
+  /*----------------CAROUSEL----------------*/
+.carro-contenedor {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+/* botones: siguiente y previo de carousel*/
+.previo, .siguiente {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* posicionamiento del boton siguiente */
+.siguiente {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* color y fondo en hover */
+.previo:hover, .siguiente:hover {
+  background-color:#ffeab9;
+  color:#f16b52;
+  
+}
+
+/* Numero de imagenes (1/3 etc) */
+.numbertext {
+  color:#f16b52;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  margin:5px;
+}
+
+/* animación de desvanecimiento */
+.desvanece {
+  -webkit-animation-name: desvanece;
+  -webkit-animation-duration: 1.5s;
+  animation-name: desvanece;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes desvanece {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes desvanece {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* para las pantallas chicas */
+@media only screen and (max-width: 300px) {
+  .previo, .siguiente,.carro-texto {font-size: 11px}
+}
+ /*----------------CAROUSEL----------------*/
