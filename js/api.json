@@ -1,0 +1,32 @@
+[
+    {
+      "precio": 1200,
+      "id": 1,
+      "title": "Jean Kivik"
+    },
+    {
+      "precio": 1500,
+      "id": 2,
+      "title": "BLAZER TAYLOR"
+    },
+    {
+      "precio": 850,
+      "id": 3,
+      "title": "REMERA AMOUR"
+    },
+    {
+      "precio": 600,
+      "id": 4,
+      "title": "CAMISA VALENCIA"
+    },
+    {
+      "precio": 3150,
+      "id": 5,
+      "title": "PANTALON ALICE"
+    },
+    {
+      "precio": 5032,
+      "id": 6,
+      "title": "CHAQUETA ARIES"
+    }
+  ]

@@ -25,31 +25,33 @@
           <a class="nav-link primordial" href="contacto.html">Contacto</a>
         </div>
         <div>
-          <a href="carrito.html" class="car-logo" ><i class="fas fa-shopping-cart"><span id="menucantidad"></span></i></a>
+          <a href="carrito.html" class="car-logo" ><i class="fas fa-shopping-cart"><span id="menu-cantidad"></span></i></a>
         </div>
       </div>
     </nav>
   </header>
     <!--Main, productos en sale-->
     <main class="container-md">
-      <div class="row">
+      <div class="row" id="cards">
+        <div class="col-md-12  m-3" id="alerta">
+        </div>
         <div class="col-md-12">
           <h1 class="text-center mt-5">SALE</h1>
         </div>
         <div class="col-md-4">
           <article class="text-justify mt-5 nuevo shadow p-3 mb-5 rounded">
-            <div class="row  align-items-center" >
+            <div class="row  align-items-center">
               <div class="col-md-12">
                 <img src="../img/valencia.jpg" class="w-100 rounded mx-auto d-block mb-3 mt-3 " alt="camisa-valencia">
               </div>
               <div class="col-md-12 text-center">
                 <h2 class="mx-auto tituloSale">CAMISA VALENCIA</h2> 
-                <h3><del class="text-secondary">$1000</del></h3>
-                <h2 class="text-danger">$600</h2>
+                <p><del class="text-secondary">$1000</del></p>
+                <h3 class="text-danger" id="precio">$600</h3>
                   <div class="col-lg-12"> 
                       <span>Composición: Poplin Con Lycra</span>
                   </div>
-                  <a class="btn btn-info btn-lg boton mt-3 boton-noticias" href="#" onclick="miFuncion()" role="button">COMPRAR</a>
+                  <button class="btn btn-dark btn-lg boton mt-3 boton-noticias" onclick="miFuncion()" data-id="4" href="#" role="button">Comprar</button>
               </div>
               <footer class="col-lg-12">
                 <ul class="mt-3 ">
@@ -68,12 +70,12 @@
               </div>
               <div class="col-md-12 text-center">
                 <h2 class="mx-auto tituloSale">PANTALON ALICE</h2> 
-                <h3><del class="text-secondary">$6,300</del></h3>
-                <h2 class="text-danger">$3150</h2>
+                <p><del class="text-secondary">$6,300</del></p>
+                <h3 class="text-danger" id="precio">$3150</h3>
                   <div class="col-lg-12"> 
                       <span>Pantalon tramado sastrero, recto.</span>
                   </div>
-                  <a class="btn btn-info btn-lg boton mt-3 boton-noticias" href="https://www.instagram.com/p/CDrTpd8jg0U/" role="button">COMPRAR</a>
+                  <button class="btn btn-dark btn-lg boton mt-3 boton-noticias" onclick="miFuncion()" data-id="5" href="#" role="button">Comprar</button>
               </div>
               <footer class="col-lg-12">
                 <ul class="mt-3 ">
@@ -92,12 +94,12 @@
               </div>
               <div class="col-md-12 text-center">
                 <h2 class="mx-auto tituloSale">CHAQUETA ARIES</h2> 
-                <h3><del class="text-secondary">$6,290</del></h3>
-                <h2 class="text-danger">$5,032</h2>
+                <p><del class="text-secondary">$6,290</del></p>
+                <h3 class="text-danger" id="precio">$5,032</h3>
                   <div class="col-lg-12"> 
                       <span>Chaqueta entallada con Cuello mao.</span>
                   </div>
-                  <a class="btn btn-info btn-lg boton mt-3 boton-noticias" href="https://www.instagram.com/p/CDrTpd8jg0U/" role="button">COMPRAR</a>
+                  <button class="btn btn-dark btn-lg boton mt-3 boton-noticias" onclick="miFuncion()" data-id="6" href="#" role="button">Comprar</button>
               </div>
               <footer class="col-lg-12">
                 <ul class="mt-3 ">
@@ -110,6 +112,60 @@
         </div>
       </div>
     </main>
+    <!--carrito-->
+    <div class="container">
+      <h1 class="text-center">Carrito</h1>
+      <hr>
+
+      <div class="my-5">
+          <h4>Carrito de compras</h4>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Acción</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+              <tr id="footer-carrito">
+                  <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+  </div>
+    <!-- template-->
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    
+    </template>
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total productos</th>
+      <td>10</td>
+      <td>
+          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+              vaciar todo
+          </button>
+      </td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+  </template>
     <!-- Pie de pagina-->
   <footer class="container-fluid border-top border-dark">
     <div class="row">
@@ -129,7 +185,12 @@
     </div>
   </div>
 </footer>
+
+<template>
+  <p id="cartel"class="h2 border rounded border-success progress-bar bg-success">Producto añadido con exito!</p>
+</template>
 <script src="../js/carrito.js"></script>
+<script src="../js/carro.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
