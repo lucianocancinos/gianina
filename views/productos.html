@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-md-12 text-center">
                       <h2 class="mx-auto tituloSale">JEAN KIVIK</h2> 
-                      <h3 class="user-select-auto ml-3 mt-4 text-center" id="precio">$1200</h2>
+                      <p class="card-text text-danger h3 mt-3">$ <span>1200</span></p>
                       <div class="col-lg-12 mt-4 mb-3 text-center"> 
                           <span>Jean skinny tiro medio color negro intenso con localizados sutiles de lona premium. De fit entallado y avíos negros</span>
                       </div>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-md-12 text-center">
                       <h2 class="mx-auto tituloSale"   >BLAZER TAYLOR</h2>
-                      <h3 class="user-select-auto ml-3 mt-4" id="precio">$1500</h3>
+                      <p class="card-text text-danger h3 mt-3">$ <span>1500</span></p>
                         <div class="col-lg-12 mt-4 mb-3"> 
                           <span>Blazer de lino natural forrado, 2 bolsillos ojal con tapa en delantero , 4 botones centrales sin ojal, manga larga con 3 botones en puño</span>
                         </div>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="col-md-12 text-center">
                       <h2 class="mx-auto tituloSale">REMERA AMOUR</h2>
-                      <h3 class="user-select-auto ml-3 mt-4"  id="precio" >$850</h2>
+                        <p class="card-text text-danger h3 mt-3">$ <span>850</span></p>
                         <div class="col-lg-12 mt-4 mb-3"> 
                           <span>Remera en jersey de algodon, cuello redondo, con estampa delantera central AMOUR, manga corta</span>
                         </div>
@@ -108,34 +108,34 @@
                   </div>
                 </article>
               </div>
+            <!--carrito-->
+              <div class="col-lg-12">
+                <h1 class="text-center">Carrito</h1>
+                <hr>
+              <div class="my-5">
+                  <h4>Carrito de compras</h4>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Acción</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody id="items"></tbody>
+                    <tfoot>
+                      <tr id="footer-carrito">
+                          <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
             </div>
           </main>
-          <!--carrito-->
-          <div class="container">
-            <h1 class="text-center">Carrito</h1>
-            <hr>
-    
-            <div class="my-5">
-                <h4>Carrito de compras</h4>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Item</th>
-                      <th scope="col">Cantidad</th>
-                      <th scope="col">Acción</th>
-                      <th scope="col">Total</th>
-                    </tr>
-                  </thead>
-                  <tbody id="items"></tbody>
-                  <tfoot>
-                    <tr id="footer-carrito">
-                        <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-        </div>
+          
           <!-- template-->
           <template id="template-carrito">
             <tr>

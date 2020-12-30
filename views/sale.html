@@ -47,7 +47,7 @@
               <div class="col-md-12 text-center">
                 <h2 class="mx-auto tituloSale">CAMISA VALENCIA</h2> 
                 <p><del class="text-secondary">$1000</del></p>
-                <h3 class="text-danger" id="precio">$600</h3>
+                <p class="card-text text-danger h3 mt-3">$ <span>600</span></p>
                   <div class="col-lg-12"> 
                       <span>Composición: Poplin Con Lycra</span>
                   </div>
@@ -71,7 +71,7 @@
               <div class="col-md-12 text-center">
                 <h2 class="mx-auto tituloSale">PANTALON ALICE</h2> 
                 <p><del class="text-secondary">$6,300</del></p>
-                <h3 class="text-danger" id="precio">$3150</h3>
+                <p class="card-text text-danger h3 mt-3">$ <span>3150</span></p>
                   <div class="col-lg-12"> 
                       <span>Pantalon tramado sastrero, recto.</span>
                   </div>
@@ -94,8 +94,8 @@
               </div>
               <div class="col-md-12 text-center">
                 <h2 class="mx-auto tituloSale">CHAQUETA ARIES</h2> 
-                <p><del class="text-secondary">$6,290</del></p>
-                <h3 class="text-danger" id="precio">$5,032</h3>
+                <span><del class="text-secondary">$6,290</del></span>
+                <p class="card-text text-danger h3 mt-3">$ <span>5000</span></p>
                   <div class="col-lg-12"> 
                       <span>Chaqueta entallada con Cuello mao.</span>
                   </div>
@@ -110,34 +110,34 @@
             </div>
           </article>
         </div>
+        <!--carrito-->
+        <div class="col-lg-12">
+          <h1 class="text-center">Carrito</h1>
+          <hr>
+        <div class="my-5">
+            <h4>Carrito de compras</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer-carrito">
+                    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
       </div>
     </main>
-    <!--carrito-->
-    <div class="container">
-      <h1 class="text-center">Carrito</h1>
-      <hr>
-
-      <div class="my-5">
-          <h4>Carrito de compras</h4>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Item</th>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Acción</th>
-                <th scope="col">Total</th>
-              </tr>
-            </thead>
-            <tbody id="items"></tbody>
-            <tfoot>
-              <tr id="footer-carrito">
-                  <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-  </div>
+    
     <!-- template-->
     <template id="template-carrito">
       <tr>

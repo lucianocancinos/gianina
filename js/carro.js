@@ -13,6 +13,10 @@ let carrito = {};
 //capturar los datos
 document.addEventListener("DOMContentLoaded", () => {
     fetchData()
+    if(localStorage.getItem('carrito')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        pintarCarrito()
+    }
 })
 //que los productos detecten el click //con la e capturamos el elemento que queremos modificar
 cards.addEventListener('click', e => { addCarrito(e) });
@@ -47,7 +51,7 @@ const setCarrito = objeto => {
     const producto = {
         id: objeto.querySelector('.btn-dark').dataset.id,
         title: objeto.querySelector('h2').textContent,
-        precio: objeto.querySelector('h3').textContent,
+        precio: objeto.querySelector('p span').textContent,
         cantidad: 1,
     }
     //Acá decimos para que no se repita la cantidad
@@ -57,7 +61,7 @@ const setCarrito = objeto => {
     //lo empujamos al carrito
     carrito[producto.id] = {...producto};
     pintarCarrito();
-     //console.log(producto);
+    //console.log(carrito);
 } 
 
 const pintarCarrito = () => {
@@ -78,6 +82,8 @@ const pintarCarrito = () => {
     })
     items.appendChild(fragment)
     pintarFooter()
+
+    localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 const pintarFooter = () => {
